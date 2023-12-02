@@ -8,13 +8,14 @@ package sync.Form;
  *
  * @author ASUS
  */
-public class ProfileForm extends javax.swing.JPanel {
+public class SchedForm extends javax.swing.JPanel {
 
     /**
-     * Creates new form ProfileForm
+     * Creates new form SchedForm
      */
-    public ProfileForm() {
+    public SchedForm() {
         initComponents();
+//        UIManager.put("defaultFont", new Font(FlatInterFont.FAMILY, Font.BOLD, 12));
     }
 
     /**
@@ -26,22 +27,36 @@ public class ProfileForm extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setOpaque(false);
+        jPanel1 = new javax.swing.JPanel();
+        schedPanel1 = new sync.Schedule.SchedPanel();
+        jLabel2 = new javax.swing.JLabel();
+
         setPreferredSize(new java.awt.Dimension(800, 500));
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(schedPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 92, 788, 380));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sync/Graphics/SchedBackground.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 699, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 378, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
+    private sync.Schedule.SchedPanel schedPanel1;
     // End of variables declaration//GEN-END:variables
 }

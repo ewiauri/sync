@@ -35,11 +35,11 @@ public class Menu extends JPanel {
         addTitle("Home");
         addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.DASHBOARD, "Dashboard"));
         addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.SCHOOL, "Courses"));
-        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.RATE_REVIEW, "Grades"));
-        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.NOTIFICATIONS_ACTIVE, "Schedule"));
+        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.NOTIFICATIONS_ACTIVE, "Notice"));
+        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.SCHEDULE, "Schedule"));
         addTitle("Settings");
         addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.ACCOUNT_CIRCLE, "Profile"));
-        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.EJECT, "Log out"));
+        addMenuItem(new ModelMenuItem(GoogleMaterialDesignIcon.LOCK, "Log out"));
         
         
         

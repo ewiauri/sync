@@ -21,20 +21,20 @@ public class Registration extends javax.swing.JFrame {
         genderGRBTN = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         regTXT = new javax.swing.JLabel();
-        genderTXT = new javax.swing.JLabel();
         nameTXT = new javax.swing.JLabel();
         courseTXT = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         studnumTF = new javax.swing.JTextField();
         namestudTF = new javax.swing.JTextField();
-        courseYrTF = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        yearCB = new javax.swing.JComboBox<>();
-        genderCB = new javax.swing.JComboBox<>();
         createBTN = new javax.swing.JButton();
         cancelSignupBTN = new javax.swing.JButton();
         haveaccountTXT = new javax.swing.JLabel();
         loginbackBTN = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        passTF = new javax.swing.JPasswordField();
+        rePassTF = new javax.swing.JPasswordField();
         regBGPn = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,20 +48,15 @@ public class Registration extends javax.swing.JFrame {
         regTXT.setText("Registration Form");
         jPanel1.add(regTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 470, 90));
 
-        genderTXT.setForeground(new java.awt.Color(255, 255, 255));
-        genderTXT.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        genderTXT.setText("Gender:");
-        jPanel1.add(genderTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, 90, 50));
-
         nameTXT.setForeground(new java.awt.Color(255, 255, 255));
         nameTXT.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        nameTXT.setText("Name:");
+        nameTXT.setText("Full Name:");
         jPanel1.add(nameTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 100, 30));
 
         courseTXT.setForeground(new java.awt.Color(255, 255, 255));
         courseTXT.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        courseTXT.setText("Course:");
-        jPanel1.add(courseTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 110, 50));
+        courseTXT.setText("re-Password:");
+        jPanel1.add(courseTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 110, 40));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -77,21 +72,10 @@ public class Registration extends javax.swing.JFrame {
         });
         jPanel1.add(namestudTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 170, 30));
 
-        courseYrTF.setText("\n");
-        jPanel1.add(courseYrTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 170, 40));
-
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Year:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 70, 50));
-
-        yearCB.setForeground(new java.awt.Color(255, 255, 255));
-        yearCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "First Year", "Second Year", "Third Year", "Fourth Year" }));
-        jPanel1.add(yearCB, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 170, 30));
-
-        genderCB.setForeground(new java.awt.Color(255, 255, 255));
-        genderCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
-        jPanel1.add(genderCB, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 110, 30));
+        jLabel2.setText("Password:");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 70, 50));
 
         createBTN.setBackground(new java.awt.Color(0, 0, 0));
         createBTN.setForeground(new java.awt.Color(153, 153, 255));
@@ -126,6 +110,21 @@ public class Registration extends javax.swing.JFrame {
             }
         });
         jPanel1.add(loginbackBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, 120, -1));
+
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("Username:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, 90, 30));
+
+        jTextField1.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField1.setText("@");
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 212, 170, 30));
+
+        passTF.setText("jPasswordField1");
+        jPanel1.add(passTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 170, 30));
+
+        rePassTF.setText("jPasswordField2");
+        jPanel1.add(rePassTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 312, 170, 30));
 
         regBGPn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sync/Graphics/RegBG.png"))); // NOI18N
         jPanel1.add(regBGPn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 500));
@@ -182,21 +181,21 @@ public class Registration extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cancelSignupBTN;
     private javax.swing.JLabel courseTXT;
-    private javax.swing.JTextField courseYrTF;
     private javax.swing.JButton createBTN;
-    private javax.swing.JComboBox<String> genderCB;
     private javax.swing.ButtonGroup genderGRBTN;
-    private javax.swing.JLabel genderTXT;
     private javax.swing.JLabel haveaccountTXT;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton loginbackBTN;
     private javax.swing.JLabel nameTXT;
     private javax.swing.JTextField namestudTF;
+    private javax.swing.JPasswordField passTF;
+    private javax.swing.JPasswordField rePassTF;
     private javax.swing.JLabel regBGPn;
     private javax.swing.JLabel regTXT;
     private javax.swing.JTextField studnumTF;
-    private javax.swing.JComboBox<String> yearCB;
     // End of variables declaration//GEN-END:variables
 }

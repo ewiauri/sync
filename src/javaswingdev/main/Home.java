@@ -10,9 +10,9 @@ import javaswingdev.menu.EventMenuSelected;
 import javax.swing.UIManager;
 import sync.Form.CourseForm;
 import sync.Form.DashboardForm;
-import sync.Form.GradesForm;
+import sync.Form.NoticeForm;
 import sync.Form.ProfileForm;
-import sync.Form.ScheduleForm;
+import sync.Form.SchedForm;
 import sync.LoginReg.LogIn;
 
 public class Home extends javax.swing.JFrame {
@@ -37,9 +37,9 @@ public class Home extends javax.swing.JFrame {
             }else if(index == 1 && indexSubMenu == 0) {
                         showForm(new CourseForm());
                 }else if(index == 2 && indexSubMenu == 0) {
-                        showForm(new GradesForm());
+                        showForm(new NoticeForm());
                     }else if(index == 3 && indexSubMenu == 0){
-                        showForm(new ScheduleForm());
+                        showForm(new SchedForm());
                         }else if(index == 4 && indexSubMenu == 0){
                         showForm(new ProfileForm());
                         }else {
